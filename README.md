@@ -19,29 +19,17 @@ A simple React application to help users manage their savings goals, track progr
 ## Setup Instructions
 
 1. Clone the repo:
-git clone your-repo-url
-cd your-folder
-
-markdown
-Copy code
+git clone git@github.com:cjkakai/smart-goal-planner.git
+cd smart-goal-planner
 
 2. Install dependencies:
 npm install
 
-arduino
-Copy code
-
 3. Start the JSON Server:
 npm run server
 
-markdown
-Copy code
-
 4. Start the React App:
 npm run dev
-
-pgsql
-Copy code
 
 Make sure db.json is in the root directory and properly structured.
 
