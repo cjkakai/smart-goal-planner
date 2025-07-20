@@ -1,5 +1,5 @@
-// src/pages/Home.jsx
 import React, { useEffect, useState } from 'react';
+import GoalCard from '../components/GoalCard';
 
 const Home = () => {
   const [goals, setGoals] = useState([]);
@@ -18,22 +18,7 @@ const Home = () => {
         <p>Loading goals...</p>
       ) : (
         goals.map((goal) => (
-          <div key={goal.id} style={{ border: '1px solid black', margin: '20px', padding: '5px' }}>
-            <h3>{goal.name}</h3>
-            <p><strong>Category:</strong> {goal.category}</p>
-            <p><strong>Target:</strong> ${goal.targetAmount}</p>
-            <p><strong>Saved:</strong> ${goal.savedAmount}</p>
-            <p><strong>Deadline:</strong> {goal.deadline}</p>
-            <div style={{ background: '#eee', height: '10px', width: '100%' }}>
-              <div
-                style={{
-                  width: `${(goal.savedAmount / goal.targetAmount) * 100}%`,
-                  height: '10px',
-                  background: 'green'
-                }}
-              ></div>
-            </div>
-          </div>
+          <GoalCard key={goal.id} goal={goal} />
         ))
       )}
     </div>
