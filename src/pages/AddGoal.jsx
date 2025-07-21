@@ -24,7 +24,7 @@ function AddGoal() {
     };
 
     // Send data to JSON server
-    fetch("http://localhost:3000/goals", {
+    fetch("https://smart-goal-planner-yssi.onrender.com/goals", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newGoal)

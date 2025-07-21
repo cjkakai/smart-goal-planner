@@ -5,7 +5,7 @@ const Home = () => {
   const [goals, setGoals] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/goals')
+    fetch('https://smart-goal-planner-yssi.onrender.com/goals')
       .then((res) => res.json())
       .then((data) => setGoals(data))
       .catch((err) => console.error("Error fetching goals:", err));

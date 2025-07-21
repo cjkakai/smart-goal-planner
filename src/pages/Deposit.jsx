@@ -7,7 +7,7 @@ const Deposit = () => {
   const [amount, setAmount] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/goals')
+    fetch('https://smart-goal-planner-yssi.onrender.com/goals')
       .then(res => res.json())
       .then(data => setGoals(data));
   }, []);
@@ -20,7 +20,7 @@ const Deposit = () => {
 
     const updatedAmount = Number(goal.savedAmount) + Number(amount);
 
-    fetch(`http://localhost:3000/goals/${selectedGoalId}`, {
+    fetch(`https://smart-goal-planner-yssi.onrender.com/goals/${selectedGoalId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
