@@ -7,6 +7,8 @@ A simple React application to help users manage their savings goals, track progr
 - Add new financial goals (name, amount, category, deadline)
 - Track progress with visual bars
 - Make deposits to individual goals
+- Edit goals
+- Delete goals
 - Overview section showing total goals, total saved, goals completed, etc.
 - Data persistence via JSON Server (db.json)
 
